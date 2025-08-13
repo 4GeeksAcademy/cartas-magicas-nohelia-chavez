@@ -1,4 +1,5 @@
 body {
+  flex-direction: column;
   background-color: green;
   display: flex;
   justify-content: center;
@@ -10,7 +11,7 @@ body {
 
 .card {
   background-color: white;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 10px;
   width: 300px;
   height: 400px;
@@ -24,10 +25,8 @@ body {
   font-size: 90px;
 }
 
-.top {
-  top: 10px;
-  left: 10px;
-}
+.top { 
+  top: 10px; left: 10px; }
 
 .center {
   display: flex;
@@ -43,15 +42,10 @@ body {
   transform: rotate(180deg);
 }
 
-.heart,
-.diamond {
-  color: red;
-}
-
-.spade,
-.club {
-  color: black;
-}
+.heart, .diamond { 
+  color: red; }
+.spade, .club    { 
+  color: black; }
 
 @media (max-width: 500px) {
   .card {
@@ -59,12 +53,31 @@ body {
     height: 280px;
     font-size: 50px;
   }
-
-  .top, .bottom {
-    font-size: 25px;
+  .top, .bottom { 
+    font-size: 25px; 
   }
-
-  .center {
+  .center { 
     font-size: 40px;
+   }
+
   }
+#btnNueva{
+  padding: 8px 12px;  
+  border:0;
+  border-radius:10px;
+  background: red;
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+  margin-bottom:12px;
+}
+.inputs-container{
+  position: absolute;
+  margin-bottom: 40%;
+  left: 20px;
+}
+.inputs-container1{
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }

@@ -1,28 +1,42 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-   <div class="card" id="card"> <!--clase de la carta-->
-    <div class="top" id="top-suit"></div> <!--parte superior del palo--> 
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartas Mágicas 4Geeks Nohelia Chavez y Vanilla.js</title>
+
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <button id="btnNueva" type="button">Nueva carta</button>
+  <div class="inputs-container">
+    <label for="width" class="cardWi">Ancho de la Carta</label>
+    <input id="width" type="number" value="300" placeholder="ancho"></label>
+  </div>
+  <div class="inputs-container1">
+    <label for="height" class="cardHi">Largo de la carta</label>
+    <input id="height" type="number" value="400" placeholder="largo">
+
+  </div>
+
+  <!-- Write your HTML code here, you can delete everything withing the body tags -->
+
+  <div class="card" id="card"> <!--clase de la carta-->
+    <div class="top" id="top-suit"></div> <!--parte superior del palo-->
     <div class="center" id="card-value"></div> <!--valor de la carta-->
     <div class="bottom" id="bottom-suit"></div> <!--parte inferior del palo-->
-   </div>
+  </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+
+
+  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  <script type="module" src="/app.js"></script>
+</body>
+
 </html>
