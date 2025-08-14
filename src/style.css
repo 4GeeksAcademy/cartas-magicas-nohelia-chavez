@@ -1,3 +1,4 @@
+
 body {
   flex-direction: column;
   background-color: green;
@@ -6,9 +7,10 @@ body {
   align-items: center;
   height:100vh;
   margin: 0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/*  Carta */
 .card {
   background-color: white;
   border: 2px solid black;
@@ -26,7 +28,9 @@ body {
 }
 
 .top { 
-  top: 10px; left: 10px; }
+  top: 10px; 
+  left: 10px; 
+}
 
 .center {
   display: flex;
@@ -43,10 +47,13 @@ body {
 }
 
 .heart, .diamond { 
-  color: red; }
+  color: red; 
+}
 .spade, .club    { 
-  color: black; }
+  color: black; 
+}
 
+/* Responsive card */
 @media (max-width: 500px) {
   .card {
     width: 200px;
@@ -58,26 +65,52 @@ body {
   }
   .center { 
     font-size: 40px;
-   }
-
   }
-#btnNueva{
+}
+
+/*  Boton para generar la nueva carta */
+#btnNueva {
   padding: 8px 12px;  
-  border:0;
-  border-radius:10px;
+  border: 0;
+  border-radius: 10px;
   background: red;
-  color:#fff;
-  font-weight:600;
-  cursor:pointer;
-  margin-bottom:12px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
 }
-.inputs-container{
-  position: absolute;
-  margin-bottom: 40%;
-  left: 20px;
+
+/* agregados estos  ontroles fijos arriba-izquierda */
+.controls {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  background: rgba(255,255,255,0.9);
+  padding: 8px 10px;
+  border-radius: 8px;
+  backdrop-filter: blur(2px);
 }
-.inputs-container1{
-  position: absolute;
-  top: 20px;
-  left: 20px;
+
+/* Quite la posición absoluta */
+.inputs-container,
+.inputs-container1 {
+  position: static;
+  margin: 0;
+}
+
+/* espacio para que la carta no se solape con la barra */
+.stage {
+  margin-top: 90px; /* ajusta según el alto real de la barra */
+}
+
+/* En pantallas pequeñas, aumenta margen si la barra crece */
+@media (max-width: 600px) {
+  .stage { 
+    margin-top: 120px; 
+  }
 }

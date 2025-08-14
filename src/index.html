@@ -14,29 +14,32 @@
 
 <body>
 
-  <button id="btnNueva" type="button">Nueva carta</button>
-  <div class="inputs-container">
-    <label for="width" class="cardWi">Ancho de la Carta</label>
-    <input id="width" type="number" value="300" placeholder="ancho"></label>
-  </div>
-  <div class="inputs-container1">
-    <label for="height" class="cardHi">Largo de la carta</label>
-    <input id="height" type="number" value="400" placeholder="largo">
+  <!-- nuevo contenedor control -->
+  <div class="controls">
+    <button id="btnNueva" type="button">Nueva carta</button>
 
-  </div>
+    <div class="inputs-container">
+      <label for="width" class="cardWi">Ancho de la Carta</label>
+      <input id="width" type="number" value="300" placeholder="ancho" />
+    </div>
 
-  <!-- Write your HTML code here, you can delete everything withing the body tags -->
-
-  <div class="card" id="card"> <!--clase de la carta-->
-    <div class="top" id="top-suit"></div> <!--parte superior del palo-->
-    <div class="center" id="card-value"></div> <!--valor de la carta-->
-    <div class="bottom" id="bottom-suit"></div> <!--parte inferior del palo-->
+    <div class="inputs-container1">
+      <label for="height" class="cardHi">Largo de la carta</label>
+      <input id="height" type="number" value="400" placeholder="largo" />
+    </div>
   </div>
 
+  <!-- Nuevo contenedor que deja espacio bajo la barra -->
+  <div class="stage">
+    <div class="card" id="card">
+      <div class="top" id="top-suit"></div>
+      <div class="center" id="card-value"></div>
+      <div class="bottom" id="bottom-suit"></div>
+    </div>
+  </div>
 
-
-  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
   <script type="module" src="/app.js"></script>
 </body>
+
 
 </html>

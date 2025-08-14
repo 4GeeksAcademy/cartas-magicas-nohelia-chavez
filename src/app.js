@@ -49,6 +49,7 @@ window.onload = function () {
   btnNueva.addEventListener("click", generateCard);
 
   // 2. Temporizador opcional
+  
 
   generateCard();
   setInterval(generateCard, 10000); // ← cada 10.000 ms (10 s) genera otra
